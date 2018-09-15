@@ -14,8 +14,6 @@ var db = admin.firestore();
 const settings = { timestampsInSnapshots: true};
 db.settings(settings);
 
-
-
 var p = db.collection('resources');
 
 function getAllDocuments(p) {
@@ -29,9 +27,6 @@ function getAllDocuments(p) {
       console.log('Error getting documents', err);
     });
 }
-//getAllDocuments(p);
-
-var ref = p.doc("2Hq5S8eTNNGXMLUybAa2");
 
 function getDocumentByID(reference_id) {
     var ref = reference_id
@@ -47,4 +42,3 @@ function getDocumentByID(reference_id) {
       console.log('Error getting document', err);
     });
 }
-getDocumentByID(ref);
