@@ -4,7 +4,7 @@ import AppNavigator from './components/AppNavigator';
 export default class App extends React.Component {
 
   render() {
-    return (
+    return(
       <AppNavigator/>
     );
   }

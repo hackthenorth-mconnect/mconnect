@@ -22,7 +22,8 @@ export default class Resources extends React.Component {
 
   render() {
     this.queryDb()
-    return ( 
+
+    return (
     <ScrollView contentContainerStyle={styles.contentContainer}>
       <Text style={styles.title}>Here are some things that might help:</Text>
         <ResultsEntry option={"butz"}/>
