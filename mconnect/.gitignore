@@ -5,6 +5,7 @@
 
 # android build
 .gradle/
+android/app/build/
 
 # dependencies
 /node_modules

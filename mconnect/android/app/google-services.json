@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "82218429715",
+    "firebase_url": "https://mconnect-7012c.firebaseio.com",
+    "project_id": "mconnect-7012c",
+    "storage_bucket": "mconnect-7012c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82218429715:android:d3dc5a98613e1934",
+        "android_client_info": {
+          "package_name": "com.mconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82218429715-7escm8fac1fqbaknplfhcn6hutlq6vlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX-yz91KQNYm44WBae9GV90yCA86IVsXo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
