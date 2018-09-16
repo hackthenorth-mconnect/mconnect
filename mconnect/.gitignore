@@ -3,6 +3,10 @@
 # expo
 .expo/
 
+# android build
+.gradle/
+android/app/build/
+
 # dependencies
 /node_modules
 package-lock.json
