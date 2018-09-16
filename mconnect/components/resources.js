@@ -8,7 +8,7 @@ export default class Resources extends React.Component {
 
   constructor(props) {
     super(props)
-    this._db = this.props.db
+    this._db = this.props.navigation.getParam('db')
     this._results = []
   }
 
@@ -16,9 +16,7 @@ export default class Resources extends React.Component {
     return ( 
     <ScrollView contentContainerStyle={styles.contentContainer}>
       <Text style={styles.title}>Here are some things that might help:</Text>
-        {this._results.map((obj) => {
-          <ListView/>
-        })}
+        <ResultsEntry option={"butz"}/>
     </ScrollView>
     );
   }
