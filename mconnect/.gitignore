@@ -6,6 +6,7 @@
 # android build
 .gradle/
 android/app/build/
+ios/build/
 
 # dependencies
 /node_modules

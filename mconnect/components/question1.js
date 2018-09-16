@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Alert, StyleSheet, Text, Button, View } from 'react-native';
+import { Picker, FlatList, Alert, StyleSheet, Text, Button, View } from 'react-native';
 
 export default class Question1 extends React.Component {
     static navigationOptions = { title: 'Question1', header: null };

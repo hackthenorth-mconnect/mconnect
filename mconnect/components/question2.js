@@ -1,6 +1,5 @@
 import React from 'react';
 import { Flatlist, TouchableOpacity, Alert, StyleSheet, Text, Button, View } from 'react-native';
-import {createStackNavigator} from 'react-navigation';
 
 export default class Question2 extends React.Component {
 
@@ -15,9 +14,6 @@ export default class Question2 extends React.Component {
       <View style={styles.container}>
       <Text style={styles.title}>Are you ...</Text>
   
-      <Flatlist>
-        
-      </Flatlist>
        <TouchableOpacity
           style={[styles.buttonStyle, styles.submitStyle]}
           activeOpacity = { .5 }
