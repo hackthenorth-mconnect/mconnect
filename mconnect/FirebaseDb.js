@@ -1,8 +1,9 @@
-const admin = require('firebase-admin');
+import firebase from 'react-native-firebase';
+
 
 export default class FirebaseDb {
-
-  constructor() {
+  
+    constructor() {
     this._config = {
       apiKey: "AIzaSyDAiVU9ZlnkuLpd6CAy3XJNGPgcVWlKQIM",
       authDomain: "mconnect-7012c.firebaseapp.com",
@@ -15,8 +16,8 @@ export default class FirebaseDb {
   }
 
   initialize() {
-    admin.initializeApp(config);  
-    this._db = admin.firestore();
+    firebase.initializeApp(config);  
+    this._db = firebase.firestore();
   }
 
   getAllDocuments(collection) {
@@ -53,4 +54,6 @@ export default class FirebaseDb {
     this._db.collection(collection).ref(reference_id).update({ weight: 1 })
   }
 
+
 }
+
