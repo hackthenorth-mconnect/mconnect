@@ -1,9 +1,0 @@
-dependencies: \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBArray.m \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Target\ Support\ Files/Protobuf/Protobuf-prefix.pch \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBArray_PackagePrivate.h \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBArray.h \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBRuntimeTypes.h \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBBootstrap.h \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h \
-  /Users/cameronwilson/Documents/Projects/reactjs/mconnect/mconnect/ios/Pods/Protobuf/objectivec/GPBMessage.h
