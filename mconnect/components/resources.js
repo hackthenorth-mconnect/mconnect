@@ -6,13 +6,19 @@ import ResultsEntry from './ResultsEntry'
 export default class Question1 extends React.Component {
     static navigationOptions = { title: 'Resources', header: null };
 
+  constructor(props) {
+    super(props)
+    this._db = this.props.db
+    this._results = []
+  }
+
   render() {
     return ( 
     <ScrollView contentContainerStyle={styles.contentContainer}>
       <Text style={styles.title}>Here are some things that might help:</Text>
-      <ResultsEntry/>
-      <ResultsEntry/>
-      <ResultsEntry/>
+        {this.results._map((obj) => {
+          <ListView/>
+        })}
     </ScrollView>
     );
   }
