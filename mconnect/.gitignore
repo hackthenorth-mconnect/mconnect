@@ -5,7 +5,7 @@
 
 # dependencies
 /node_modules
-package_lock.json
+package-lock.json
 
 # misc
 .env.local

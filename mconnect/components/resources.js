@@ -7,6 +7,7 @@ export default class Question1 extends React.Component {
   render() {
     return ( <View style={styles.container}>
       <Text style={styles.title}>Here are the resources we recommend for you</Text>
+      <Button title="Media viewer"></Button>
     </View>
     );
   }
