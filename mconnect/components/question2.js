@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flatlist, TouchableOpacity, Alert, StyleSheet, Text, Button, View } from 'react-native';
+import { FlatList, Image, TouchableOpacity, Alert, StyleSheet, Text, Button, View } from 'react-native';
+import { Checkbox } from 'react-native-elements';
 
 export default class Question2 extends React.Component {
 
@@ -12,9 +13,20 @@ export default class Question2 extends React.Component {
   render() {
     return ( 
       <View style={styles.container}>
+      <Image source={require('./images/hypertension.png')} style={styles.logoStyle} />
       <Text style={styles.title}>Are you ...</Text>
-  
-       <TouchableOpacity
+      <FlatList
+        data={[
+          {key: 'Sweating'},
+          {key: 'Hyperventilating'},
+          {key: '....'},
+        ]}
+        renderItem={({item}) => <CheckBox
+        title={item.key}
+        checked={this.state.checked}
+        />}
+      />
+        <TouchableOpacity
           style={[styles.buttonStyle, styles.submitStyle]}
           activeOpacity = { .5 }
           onPress={() =>
