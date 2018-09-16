@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text } from 'react-native';
 
 import ResultsEntry from './ResultsEntry'
 
-export default class Question1 extends React.Component {
+export default class Resources extends React.Component {
     static navigationOptions = { title: 'Resources', header: null };
 
   constructor(props) {
@@ -16,7 +16,7 @@ export default class Question1 extends React.Component {
     return ( 
     <ScrollView contentContainerStyle={styles.contentContainer}>
       <Text style={styles.title}>Here are some things that might help:</Text>
-        {this.results._map((obj) => {
+        {this._results.map((obj) => {
           <ListView/>
         })}
     </ScrollView>
