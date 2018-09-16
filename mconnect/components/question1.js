@@ -9,25 +9,16 @@ export default class Question1 extends React.Component {
   render() {
     return ( 
     <View style={styles.container}>
-    <View style={styles.content}>
       <Text style={styles.title}>How tense are you?</Text>
-      <View style={styles.listStyle}></View>
-      <FlatList
-        horizontal={true}
-        data={[
-          {key: '1'},
-          {key: '2'},
-          {key: '3'},
-          {key: '4'},
-          {key: '5'},
-        ]}
-        renderItem={({item}) => <Button title={item.key} onPress={this._onInput(item.key)} style={styles.selectButtons}></Button>}
-      />
+      <Picker
+        style={{ height: 50, width: 100 }}>
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
       <Button title='Next' onPress={() =>
             this.props.navigation.navigate('Question2')
           } style={styles.SubmitButtonStyle}>
-          </Button>
-           </View>
+      </Button>
     </View>
     );
   }
@@ -35,17 +26,43 @@ export default class Question1 extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#79e0e5',
-  },
-  content: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  selectButtons: {
-    backgroundColor: '#fff'
+  buttonStyle: {
+    marginTop: 50,
+    paddingTop:15,
+    paddingBottom:15,
+    marginLeft:30,
+    marginRight:30,
+    backgroundColor:'#00BCD4',
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: '#fff',
   },
-  listStyle: {
-    justifyContent: 'space-between'
+  TextStyle:{
+      textAlign:'center',
+      fontSize: 20, 
+      color: '#fff'
   },
+  title: {
+    color: 'rgb(66, 134, 244)',
+    fontSize: 25,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginLeft:30,
+    marginRight:30,
+    paddingTop:15,
+    paddingBottom:15,
+  }, 
+  logoStyle: {
+      width: 50,
+      height: 50,
+      alignItems: 'center',
+  },
+  submitStyle: {
+    width: 200,
+  }
 });
