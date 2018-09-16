@@ -12,7 +12,7 @@ const AppNavigator = createStackNavigator({
   Home: { screen: Home },
   Question1: { screen: Question1 },
   Question2: { screen: Question2 },
-  Resources: { screen: <Resources db={db}/> },
+  Resources: { screen: Resources },
 });
 
 export default AppNavigator;
