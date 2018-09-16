@@ -16,7 +16,7 @@ export default class FirebaseDb {
   }
 
   initialize() {
-    firebase.initializeApp(config);  
+    firebase.initializeApp(this._config);  
     this._db = firebase.firestore();
   }
 
