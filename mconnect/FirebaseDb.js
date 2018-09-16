@@ -53,7 +53,5 @@ export default class FirebaseDb {
   resetPredictorWeight(collection, reference_id){
     this._db.collection(collection).ref(reference_id).update({ weight: 1 })
   }
-
-
 }
 

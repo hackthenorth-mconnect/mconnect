@@ -7,6 +7,8 @@ const db = new FirebaseDb();
 export default class App extends React.Component {
 
   render() {
+    return(
+      <AppNavigator/>
     return (
       <AppNavigator db={db} />
     );

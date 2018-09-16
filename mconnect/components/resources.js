@@ -13,11 +13,18 @@ export default class Resources extends React.Component {
   }
 
   render() {
+<<<<<<< HEAD
+    return ( <View style={styles.container}>
+      <Text style={styles.title}>Here are the resources we recommend for you</Text>
+      <Button title="Media viewer"></Button>
+    </View>
+=======
     return ( 
     <ScrollView contentContainerStyle={styles.contentContainer}>
       <Text style={styles.title}>Here are some things that might help:</Text>
         <ResultsEntry option={"butz"}/>
     </ScrollView>
+>>>>>>> origin
     );
   }
 }
